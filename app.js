@@ -46,7 +46,7 @@ let url = "http://localhost/info2180-lab4/superheroes.php?query=";
                 alias = responsearr['alias'];
                 name = responsearr['name'];
                 desc = responsearr['biography'];
-                $("#result").html("<h3>" + alias + "</h3>" + "<h4>" + name + "</h4>" + "<p>" + desc + "</p>") ;
+                $("#result").html("<h3>" + alias + "</h3>" + "<h4>A.K.A " + name + "</h4>" + "<p>" + desc + "</p>") ;
             }
             
         })

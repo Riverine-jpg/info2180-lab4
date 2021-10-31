@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+h1 {
+    margin:0;
+}
+body {
+    margin: 0;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.20fr 2fr 0.3fr;
+    font-family:-apple-system,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main{
+    padding-left: 200px;
+}
+
+header{
+    grid-row: 1;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(77, 138, 181);
+    color: white;
+}
+
+.sccont{
+    padding-top: 30px;
+}
+
+.btn{
+    background-color:rgb(199, 37, 35);
+    padding:10px 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+input{
+    width: 960px;
+    height: 35px;     
+}
+
+#result{
+    padding-top: 20px;
+}
+
+#result h5{
+    color: red;
+}
+
+#result h3{
+    margin-bottom: 0;
+}
+
+#result h4{
+    margin-top: 0;
+}
