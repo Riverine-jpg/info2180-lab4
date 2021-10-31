@@ -1,6 +1,6 @@
 <?php
-
 header("Access-Control-Allow-Origin: *");
+header('Content-type: application/json');
 $superheroes = [
   [
       "id" => 1,
@@ -66,8 +66,21 @@ $superheroes = [
 
 ?>
 
-<ul>
-<?php foreach ($superheroes as $superhero): ?>
-  <li><?= $superhero['alias']; ?></li>
-<?php endforeach; ?>
-</ul>
+<?php
+    $quer = htmlentities($_GET['query'],ENT_QUOTES, 'UTF-8');
+    if ($quer == ''){
+        echo json_encode($superheroes);
+    }else{
+        foreach($superheroes as $superhero){
+            if($superhero["alias"] == $quer){
+                echo json_encode($superhero);
+                break;
+            }else if($superhero["name"] == $quer ){
+                echo json_encode($superhero);
+                break;
+            }
+        }
+    }
+    
+    ?>
+
